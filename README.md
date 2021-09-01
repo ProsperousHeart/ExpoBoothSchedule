@@ -13,7 +13,7 @@ Instead of trying to relearn Excel, why not create a quick program that will do 
 
 ### Input
 
-Google Sheets doc with several columns. The 3 main columns we’ll need to focus on are the:
+[Google Sheets doc](https://docs.google.com/spreadsheets/d/1L2a44kmtYrP8ATYbLbU1PH_9i70uj2OEbQTPuhlwSWY/edit?usp=sharing) with several columns. The 3 main columns we’ll need to focus on are the:
 
 - Day of event (1 - 3)
 - Name
