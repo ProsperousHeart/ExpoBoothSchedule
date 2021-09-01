@@ -31,6 +31,8 @@ Things To Look Out For:
 1. Is the data clean?
 2. Is it as expected or do you have to tweak, make changes, remove, average, etc?
 
+During preparation of this project, it was determined that initial plans for data could not be used. CSV data caused issues. Please see [DataCleaning.MD](DataCleaning.MD)
+
 ### Output
 
 #### Need To Know
