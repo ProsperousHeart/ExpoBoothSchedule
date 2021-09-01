@@ -6,7 +6,7 @@ After getting feedback from booth team, pulled the data stored from TypeForm int
 
 Here is the process taken to resolve, thus allowing creation of the program.
 
-1. I used the Google sheets formula '' to take the single cell and split into rows using commas
+1. I used the Google sheets formula `=TRANSPOSE(SPLIT('Sheet Name'!B2, ",", TRUE, TRUE))` to take the single cell of all the sessions ranked in order and split them into rows using commas as delimiters
 2. Searched against the session titles in TypeForm to create single cells with the titles (instead of split cells if there were commas in the title) - only update top 10
 3. Create [a new sheet](https://docs.google.com/spreadsheets/d/1L2a44kmtYrP8ATYbLbU1PH_9i70uj2OEbQTPuhlwSWY/edit?usp=sharing) for:
    - Create a cleaned up sheet for each day & booth personnel's top 10 sessions
