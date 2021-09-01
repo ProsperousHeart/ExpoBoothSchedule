@@ -27,6 +27,10 @@ Expecting a file in CSV or XLSX with the session information for easy import. Ne
 - Time (Start / End)
 - Duration - should be able to pull from start/end math
 
+Things To Look Out For:
+1. Is the data clean?
+2. Is it as expected or do you have to tweak, make changes, remove, average, etc?
+
 ### Output
 
 #### Need To Know
