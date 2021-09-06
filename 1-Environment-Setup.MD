@@ -2,6 +2,10 @@
 
 Using whatever method you generally follow, ensure your repo is on your local machine.
 
+Here is what cloning my repo ooked like as per [here](https://github.com/ProsperousHeart/cheatsheets/blob/master/Tools/git.md#clone):
+
+![image](https://user-images.githubusercontent.com/20706498/132254282-d02e3cf5-2d89-417b-9b59-c93d6513b250.png)
+
 # Prepare Your Environment
 
 Ensure you have python installed. For this project, we are using 3.6.5 versiom.
