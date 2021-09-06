@@ -24,6 +24,12 @@ You can confirm it was successful by running:
 
 ![image](https://user-images.githubusercontent.com/20706498/132256685-2e9b72fc-0303-46a5-823b-7519039ba406.png)
 
+In this project I also had to set up the upstream for **main** - but ran into issues. See:  [Issue #14](https://github.com/ProsperousHeart/ExpoBoothSchedule/issues/14)
+
+You'll just need to:
+1. run `git checkout main`
+2. run `git push -u origin main`
+
 # Prepare Your Environment
 
 Ensure you have python installed. For this project, we are using 3.6.5 versiom.
