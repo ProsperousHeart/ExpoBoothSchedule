@@ -110,3 +110,8 @@ git checkout BareBones
 git merge main BareBones
 git push
 ```
+
+# Install Necessary Modules
+
+Be sure that your virtual environment is on and that you have installed your proper modules. If you're not sure, you can run:
+`pip list`
