@@ -97,3 +97,16 @@ Since we can at least move forward (and there's currently no indication of an is
 - [Using A Token On Command Line](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token#using-a-token-on-the-command-line)
 - [Creating A Token](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token)
 - [About Remote Repositories](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories)
+
+Once a Personal Access Token was created, used it and my username to be able to authenticate in my CLI.
+
+After that, still had to set upstream so in the **BareBones** branch, ran:  `git push -u origin BareBones`
+
+Then ensure that the **main** branch is updated & **BareBones** is a "fresh" copy by running:
+```
+git checkout main
+git pull
+git checkout BareBones
+git merge main BareBones
+git push
+```
