@@ -67,4 +67,33 @@ At this point we are ready to begin creatimg bare bones.
 
 Use git to enter into your repo. Then move into a new branch. For this project, I created the following as per [here](https://github.com/ProsperousHeart/cheatsheets/blob/master/Tools/git.md#how-do-i--create-a-new-branch):
 
-    `git branch -b BareBones`
+    `git checkout -b BareBones`
+
+This was supposed to also setup a connection to the upstream but did not appear to do so as shown by running `git push`:
+
+
+![image](https://user-images.githubusercontent.com/20706498/132267246-2e5052c4-f61b-447c-8866-9d7fb02a434f.png)
+
+Turns out there was a [change in authentication on August 13, 2021](https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations) - less than 1 month ago!
+
+```
+Logon failed, use ctrl+c to cancel basic credential prompt.
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/ProsperousHeart/ExpoBoothSchedule.git/'
+
+```
+
+![image](https://user-images.githubusercontent.com/20706498/132268222-5f604336-91df-458d-9101-ba2f08defae6.png)
+
+Looks like we needed to:
+1. Create a [personal access token (PAT)](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-token)
+2. Remove the Windows credential for GitHub as outlined [here](https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git#git-credential-manager-core)
+3. Using [Git Credential Manager Core](https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git#git-credential-manager-core) (local git) supposed to store the creds .... but the Git documentation doesn't explain how to store it AFTER you've already cloned it. So ...
+
+Since we can at least move forward (and there's currently no indication of an issue getting data between local git repo and GitHub, I will simply leave these potential related links:
+- [Git Credential Manage Core](https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git)
+- [About Authentication To GitHub](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/about-authentication-to-github)
+- [Using A Token On Command Line](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token#using-a-token-on-the-command-line)
+- [Creating A Token](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token)
+- [About Remote Repositories](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories)
