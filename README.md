@@ -1,3 +1,6 @@
+# Heads Up
+Looking for video recordings for this repo? Be sure to check out [Training Vids](Training_Videos.MD)!
+
 # Main Requirements
 Code to take TypeForm Google sheet feedback, rank requests, and create calendar of volunteer schedule
 
